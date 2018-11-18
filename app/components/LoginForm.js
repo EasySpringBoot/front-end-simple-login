@@ -109,7 +109,7 @@ class LoginForm extends React.Component {
                                 variant="contained"
                                 color="primary"
                                 className={classes.button}>
-                                登陆
+                                登录
                             </Button>
                             <Button variant="contained" className={classes.button}>
                                 重置
