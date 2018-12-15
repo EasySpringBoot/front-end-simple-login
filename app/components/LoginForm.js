@@ -64,6 +64,10 @@ class LoginForm extends React.Component {
             type: 'POST',
             success: (res) => {
                 console.log(data)
+                alert(res.msg)
+                if (res.success == true) {
+                    location.href = '/welcome'
+                }
             },
             error: (err) => {
                 console.log(err)
