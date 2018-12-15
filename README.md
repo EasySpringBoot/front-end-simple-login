@@ -332,8 +332,8 @@ npm install @material-ui/icons
 ```
 
 > 详细使用参考：[https://material-ui.com/getting-started/installation/](https://material-ui.com/getting-started/installation/)
-#### 开发一个简单的登陆表单
-下面我们就来使用Material UI组件库，来开发一个简单的登陆表单页面。这个表单页面的最终效果如下图：
+#### 开发一个简单的登录表单
+下面我们就来使用Material UI组件库，来开发一个简单的登录表单页面。这个表单页面的最终效果如下图：
 
 
 ![image.png | left | 438x280](https://cdn.nlark.com/yuque/0/2018/png/176266/1541830683824-f738ec9b-02cc-4563-b46f-a46f87518ce9.png "")
@@ -366,7 +366,7 @@ import Button from '@material-ui/core/Button';
 $ npm install prop-types
 ```
 
-最终，登陆页面的 js组件类的代码如下：
+最终，登录页面的 js组件类的代码如下：
 ```javascript
 class LoginForm extends React.Component {
 
@@ -393,7 +393,7 @@ class LoginForm extends React.Component {
                                 variant="contained"
                                 color="primary"
                                 className={classes.button}>
-                                登陆
+                                登录
                             </Button>
                             <Button variant="contained" className={classes.button}>
                                 重置
@@ -408,15 +408,15 @@ class LoginForm extends React.Component {
 }
 ```
 
-##### 登陆按钮事件处理
-登陆按钮的前端代码如下：
+##### 登录按钮事件处理
+登录按钮的前端代码如下：
 ```jsx
 <Button
     onClick={this.handleClick}
     variant="contained"
     color="primary"
     className={classes.button}>
-    登陆
+    登录
 </Button>
 ```
 
@@ -433,12 +433,12 @@ handleClick(event) {
 };
 ```
 
-这样我们可以在登陆页面，输入用户名、密码：
+这样我们可以在登录页面，输入用户名、密码：
 
 
 ![image.png | left | 488x295](https://cdn.nlark.com/yuque/0/2018/png/176266/1541858703485-dc808637-ea0e-47d9-9927-fe63cf00fd6f.png "")
 
-点击“登陆”，可以看到控制台的输出：
+点击“登录”，可以看到控制台的输出：
 
 
 ![image.png | left | 747x169](https://cdn.nlark.com/yuque/0/2018/png/176266/1541858785304-2d252d9d-fb70-4e46-90dc-d3791f734e65.png "")
@@ -497,14 +497,14 @@ constructor(props) {
 
 
 ##### 表单提交函数编写
-这里我们使用熟悉的 jquery的 ajax 来进行登陆表单的提交。首先，安装 jquery依赖如下：
+这里我们使用熟悉的 jquery的 ajax 来进行登录表单的提交。首先，安装 jquery依赖如下：
 ```bash
 $ npm install jquery --save
 ```
 
 安装完毕，我们可以在 package.json 中多了 "jquery": "^3.3.1" 。
 
-下面，我们来使用 ajax 写登陆 Post 请求。
+下面，我们来使用 ajax 写登录 Post 请求。
 
 ##### 引入 jquery
 首先，我们在LoginForm.js文件头部 import jquery，代码如下：
@@ -512,7 +512,7 @@ $ npm install jquery --save
 import $ from 'jquery'
 ```
 
-##### 登陆 Post代码
+##### 登录 Post代码
 下面就是写一个普通的 ajax POST请求的代码。
 ```javascript
 handleClick(event) {
@@ -660,7 +660,7 @@ class LoginForm extends React.Component {
                                 variant="contained"
                                 color="primary"
                                 className={classes.button}>
-                                登陆
+                                登录
                             </Button>
                             <Button variant="contained" className={classes.button}>
                                 重置
@@ -857,7 +857,7 @@ class HelloWorldController {
 server.port=9000
 ```
 
-##### 编写登陆 POST 接口
+##### 编写登录 POST 接口
 我们先简单返回一个结果示例：
 ```kotlin
 package com.easy.springboot.simpleloginbackend.controller
@@ -981,7 +981,7 @@ class IndexController {
 
 #### 前后端联调测试
 
-重启应用，访问 [http://127.0.0.1:9000/](http://127.0.0.1:9000/) ， 我们会看到登陆表单页面。输入用户名、密码，点击登录
+重启应用，访问 [http://127.0.0.1:9000/](http://127.0.0.1:9000/) ， 我们会看到登录表单页面。输入用户名、密码，点击登录
 
 
 ![image.png | left | 512x277](https://cdn.nlark.com/yuque/0/2018/png/176266/1541867779414-de18f4a7-35eb-48f4-8405-a7eb91cabe3a.png "")
